@@ -1,6 +1,6 @@
 .main{
     width: 100%;
-    height: 2330px;
+    height: auto;
 }
 *{
     margin: 0;
@@ -265,15 +265,6 @@ nav{
     height:650px;
     width: 100%;
     padding: 90px;
-}
-
-.main .sub2
-{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 1280px;
-    width:100%;
-    background-color: lightblue;
 }
 
 .main .sub1 .content
