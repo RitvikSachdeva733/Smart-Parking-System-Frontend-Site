@@ -2,19 +2,22 @@
     width: 100%;
     height: 2330px;
 }
-
 *{
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
 .header{
-    background-color: orangered;
+    background-color: rgb(81, 145, 255);
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%; /* This should remain as is */
+    width: 100%; 
     padding: 0;
     box-sizing: border-box;
 }
@@ -32,16 +35,16 @@
 }
 
 .searchBar input[type="text"] {
-    color: #ffffff;
+    color: #000000;
     padding-inline-end: 5px;
     padding-inline-start: 5px;
     padding-block: 9.6px;
-    background: rgb(255, 228, 219);
+    background: rgb(183, 209, 255);
     margin-right: 10px;
     border-radius: 20px;
     border-style: none;
     font-size: 16px;
-    flex-grow: 1; /* This will make the input grow to fill the searchBar */
+    flex-grow: 1; 
     width: 100%;
 }
 
@@ -53,7 +56,7 @@
 
 #search2:hover{
     padding: 10px;
-    color: #ffffff;
+    color: #000000;
     margin-right: 10px;
 }
 
@@ -84,10 +87,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 30px; /* Width of the hamburger icon */
-    height: 25px; /* Height of the hamburger icon */
+    width: 30px; 
+    height: 25px; 
     cursor: pointer;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000; 
 }
 
 .bar {
@@ -97,26 +100,27 @@
 }
 
 .hamburger-dropdown {
-    display: none; /* Hidden by default */
+    display: none; 
     position: absolute;
-    right: 20px;
-    top: 60px; /* Position below the header */
-    background-color: orangered;
+    right: 10px;
+    top: 60px; 
+    background-color: rgb(81, 145, 255);
     border-radius: 5px;
-    padding: 10px; /* Adjusted padding */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Optional: Adds a shadow for depth */
-    width: 200px; /* Adjusted width to accommodate more content */
-    max-height: 300px; /* Adjusted max-height for better content fit */
-    overflow-y: auto; /* Enables scroll for overflow content */
+    padding: 10px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    width: 200px; 
+    max-height: 800px; 
+    overflow-y: auto; 
 }
 
 .hamburger-dropdown.show {
-    display: block; /* Shown when class is added */
+    display: block; 
 }
 
 .hamburger-dropdown li {
     list-style: none;
-    padding: 10px; /* Adjusted padding for each item */
+    padding-inline: 10px; 
+    padding-block: 17px; 
     border-bottom: 1px solid white;
 }
 
@@ -125,13 +129,15 @@
 }
 
 .hamburger-dropdown li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+}
+.hamburger-dropdown li a:hover{
+    color: white;
 }
 
 .SecondHeader{    
     width: 100%;
-    
 }
 
 nav{
@@ -154,8 +160,8 @@ nav{
     color: rgb(0, 0, 0);
     font-size: 18px;
     position: relative;
-    display: inline-block; /* Ensures the pseudo-element aligns correctly */
-    overflow: hidden; /* Keeps the pseudo-element from extending outside */
+    display: inline-block; 
+    overflow: hidden; 
 }
 
 .navlink li a::after {
@@ -163,10 +169,10 @@ nav{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0%; /* Start with no width */
-    height: 2px; /* Thickness of the underline */
-    background-color: orangered; /* Color of the underline */
-    transition: width 0.5s ease; /* Smooth transition for the width */
+    width: 0%; 
+    height: 2px; 
+    background-color: rgb(48, 124, 255); 
+    transition: width 0.5s ease; 
 }
 
 .navlink li{
@@ -176,16 +182,17 @@ nav{
 }
 
 .navlink li a:hover{
-    color: orangered;
+    color: rgb(48, 124, 255);
 }
 
 .navlink li a:hover::after {
-    width: 100%; /* Full width on hover */
+    width: 100%; 
 }
 
 .navlink{
     text-align: right;
-    padding: .5em;
+    padding-inline: .5em;
+    padding-block: 15px;
 }
 
 @media screen and (max-width: 900px) {
@@ -209,6 +216,9 @@ nav{
     .mail{
         display: none;
     }
+    .navlink{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -219,22 +229,10 @@ nav{
 
 @media screen and (max-width: 400px) {
     .brand{
-        font-size: 15px;
-    }
-    .navlink li a{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
-@media screen and (max-width: 350px) {
-    .brand{
-        font-size: 13px;
-    }
-
-    .navlink li a{
-        font-size: 12px;
-    }
-}
 
 
 .main .btn
@@ -355,6 +353,5 @@ nav{
 {
    margin:30%; 
 }
-
 
 
