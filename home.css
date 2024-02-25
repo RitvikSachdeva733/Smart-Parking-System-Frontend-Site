@@ -354,4 +354,82 @@ nav{
    margin:30%; 
 }
 
+.main-footer, .footer{
+    background-color: #f0f0f0;
+}
+
+table {
+	border:none;
+    background-color: #f0f0f0;
+	width: 80%;
+	text-align: left;
+}
+  
+th{
+	font-size:16px;
+	text-align: left;
+	vertical-align: top;
+	padding-inline: 40px;
+    color: black;
+}
+
+td{
+	font-size:14px;
+	text-align: left;
+	vertical-align: top;
+	padding-inline: 40px;
+}
+
+td a{
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+}
+
+td a:hover{
+    text-decoration: underline;
+    color: rgb(16, 49, 107);
+}
+
+.final-footer{
+    border-top: #383838 solid;
+    padding-left: 70px;
+    padding-top: 20px ;
+    padding-bottom: 100px ;
+}
+
+.final-footer h4{
+    font-size: medium;
+}
+
+@media screen and (max-width: 600px) {
+    .preview{
+        padding-inline: 50px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    table{
+        margin: 10px;
+    }
+
+    th, td{
+        padding-inline: 20px;
+    }
+    .preview{
+        padding-inline: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    th, td{
+        padding-inline: 15px;
+    }
+}
+
+@media screen and (max-width: 341px) {
+    th{
+        display: none;
+    }
+}
+
 
