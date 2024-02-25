@@ -1,0 +1,360 @@
+.main{
+    width: 100%;
+    height: 2330px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: orangered;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* This should remain as is */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.searchBar {
+    display: flex;
+    flex-grow: .3;
+}
+
+.searchBar input[type="text"] {
+    color: #ffffff;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    padding-block: 9.6px;
+    background: rgb(255, 228, 219);
+    margin-right: 10px;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 16px;
+    flex-grow: 1; /* This will make the input grow to fill the searchBar */
+    width: 100%;
+}
+
+#search2{
+    padding: 10px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+#search2:hover{
+    padding: 10px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.contact{
+    margin-right: 20px;
+}
+
+.mail{
+    margin-right: 20px;
+}
+
+.support{
+    margin-right: 20px;
+}
+
+.follow{
+    margin-right: 20px;
+}
+
+.social-icons img{
+    width:25px;
+    height:25px;
+}
+
+/* Hamburger Menu and Dropdown */
+.hamburger-menu {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px; /* Width of the hamburger icon */
+    height: 25px; /* Height of the hamburger icon */
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.bar {
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.hamburger-dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 20px;
+    top: 60px; /* Position below the header */
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 10px; /* Adjusted padding */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Optional: Adds a shadow for depth */
+    width: 200px; /* Adjusted width to accommodate more content */
+    max-height: 300px; /* Adjusted max-height for better content fit */
+    overflow-y: auto; /* Enables scroll for overflow content */
+}
+
+.hamburger-dropdown.show {
+    display: block; /* Shown when class is added */
+}
+
+.hamburger-dropdown li {
+    list-style: none;
+    padding: 10px; /* Adjusted padding for each item */
+    border-bottom: 1px solid white;
+}
+
+.hamburger-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.hamburger-dropdown li a {
+    color: white;
+    text-decoration: none;
+}
+
+.SecondHeader{    
+    width: 100%;
+    
+}
+
+nav{
+    background-color: white;
+    height: 35px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0;
+}
+
+.brand{
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 1.5em;
+    float: left;
+}
+
+.navlink li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    position: relative;
+    display: inline-block; /* Ensures the pseudo-element aligns correctly */
+    overflow: hidden; /* Keeps the pseudo-element from extending outside */
+}
+
+.navlink li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Start with no width */
+    height: 2px; /* Thickness of the underline */
+    background-color: orangered; /* Color of the underline */
+    transition: width 0.5s ease; /* Smooth transition for the width */
+}
+
+.navlink li{
+    list-style-type: none;
+    display: inline;
+    margin-left: 1em;
+}
+
+.navlink li a:hover{
+    color: orangered;
+}
+
+.navlink li a:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+.navlink{
+    text-align: right;
+    padding: .5em;
+}
+
+@media screen and (max-width: 900px) {
+
+    .follow .social-icons img{
+    display: none;
+    }
+
+    .support {
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .header{
+        padding-left: 5px;
+    }
+
+    .mail{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hamburger-menu, .bar, .hamburger-dropdown, .hamburger-dropdown.show{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .brand{
+        font-size: 15px;
+    }
+    .navlink li a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .brand{
+        font-size: 13px;
+    }
+
+    .navlink li a{
+        font-size: 12px;
+    }
+}
+
+
+.main .btn
+{
+    width:148px;
+    height:48px;
+    border-radius: 25px;
+    color:#ffffff;
+    background-color: green;
+    position: fixed;
+    bottom: 130px;
+    right:20px;
+    font-size: 14px;
+    font-style: Montserrat;
+}
+
+.main .slider
+{
+    height:400px;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.main .sub1
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height:650px;
+    width: 100%;
+    padding: 90px;
+}
+
+.main .sub2
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1280px;
+    width:100%;
+    background-color: lightblue;
+}
+
+.main .sub1 .content
+{
+    width:990px;
+    height: 480px;
+}
+.main .sub1 .content .row1
+{
+    width: 100%;
+    height: 100px;
+    
+}
+.main .sub1 .content .row1 .head
+{
+    width: 100%;
+    height: 100%; 
+    margin-left: 180px;
+    margin-top: 70px;
+   
+}
+.main .sub1 .head #para
+{
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+
+.main .sub1 .content .row2
+{
+    margin-top: 20px;
+    margin-left: 150px;
+    height: 380px;
+    width: 100%;
+    display: flex;
+    flex-flow:wrap;
+    column-gap: 100px;
+}
+
+.main .sub1 .content .row2 .col{
+    width:350px;
+    height: 340px;
+    
+}
+
+.main .sub1 .content .row2 .col .icon
+{
+    width:100%;
+    height:40%;
+    padding-top: 20px;
+    margin-left: 30%;
+}
+
+.main .sub1 .content .row2 .col .icon #pic
+{
+    width: 100px;
+    height: 100px;
+}
+
+.main .sub1 .content .row2 .col .text
+{
+    width: 100%;
+    height:60%;
+}
+
+.main .sub1 .content .row2 .col .text #heading
+{
+    margin-left:22%;
+}
+
+.main .sub1 .content .row2 .col .text #para
+{
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.main .sub1 .content .row2 .col .text #link
+{
+   margin:30%; 
+}
+
+
+
