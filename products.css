@@ -403,24 +403,3 @@ td a:hover{
     }
 }
 
-::-webkit-scrollbar {
-	width: 10px;
-}
-  
-::-webkit-scrollbar-track {
-	background-color: rgb(244, 244, 244);
-}
-  
-::-webkit-scrollbar-thumb {
-	background-color: rgba(0, 94, 255,0.7);
-	border-radius: 5px;
-}
-
-
-
-
-
-
-
-
-
