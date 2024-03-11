@@ -240,23 +240,45 @@ nav{
     height:48px;
     border-radius: 25px;
     color:#ffffff;
-    background-color: green;
+    background-color:rgb(48, 124, 255);
     position: fixed;
-    bottom: 130px;
+    bottom: 110px;
     right:20px;
     font-size: 14px;
     font-style: Montserrat;
 }
 
-.main .slider
+.slider
 {
-    height:400px;
     width:100%;
     margin-top: 10px;
     margin-bottom: 10px;
     
 }
 
+.Features {
+    text-align: center; 
+    width: 100%;
+    padding: 20px; 
+    margin-top: 20px; 
+}
+
+.Features h1{
+    margin: 0; 
+    padding: 10px 0; 
+    margin-bottom: 20px; 
+    font-size: 1.8em; 
+}
+
+.flex_card{
+    padding-inline: 150px;
+    margin:5% 2%;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+/*
 .main .sub1
 {
     margin-top: 10px;
@@ -343,9 +365,29 @@ nav{
 {
    margin:30%; 
 }
+*/
 
 .main-footer, .footer{
     background-color: #f0f0f0;
+
+}
+
+@media screen and (max-width: 1500px) {
+    .main .sub1 {
+        width: 95%;
+    }
+    .content {
+        width: 95%;
+    }
+    .row {
+        width: 95%;
+    }
+    .head {
+        width: 95%;
+    }
+    .head p{
+        font-size: 26px;
+    }
 }
 
 table {
