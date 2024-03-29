@@ -246,6 +246,7 @@ nav{
     right:20px;
     font-size: 14px;
     font-style: Montserrat;
+    z-index: 100;
 }
 
 .slider
@@ -276,6 +277,42 @@ nav{
     display: flex;
     gap:10px;
     flex-wrap: wrap;
+    z-index: -10;
+}
+
+.flex_card img{
+    width: 30%;
+    position: relative;
+    left: 35%;
+}
+
+@media screen and (max-width: 770px) {
+    .flex_card{
+        padding-inline: 100px;
+        gap: 15px;
+        margin: 2% 1%;
+    }
+
+    .flex_card p{
+        font-size: small;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .flex_card{
+        padding-inline: 50px;
+        gap: 15px;
+        margin: 2% 1%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .flex_card{
+        padding-inline: 40px;
+        gap: 15px;
+        margin: 0;
+    }
 }
 
 /*
