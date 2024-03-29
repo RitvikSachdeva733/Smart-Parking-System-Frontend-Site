@@ -225,12 +225,6 @@ nav{
     }
 }
 
-@media screen and (max-width: 500px) {
-    .form{
-        min-width: 400px;
-    }
-}
-
 @media screen and (max-width: 450px) {
     .form{
         min-width: 370px;
