@@ -192,7 +192,7 @@ nav{
 }
 
 .main{
-    height: 100vh;
+    padding-bottom: 40px;
     width: 100%;
     background-color: rgb(233, 233, 233);
     margin-top: 25px;
