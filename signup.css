@@ -207,12 +207,54 @@ nav{
 }
 
 .form{
-    max-width: 430px;
-    width: 100%;
+    width: 430px;
     padding: 40px;
     border-radius: 6px;
     background-color:white;
 }
+
+@media screen and (max-width: 670px) {
+    .form{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form{
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form{
+        min-width: 370px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form{
+        min-width: 340px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .form{
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .form{
+        min-width: 260px;
+    }
+}
+
 
 .form-content h1{
     font-weight: 600;
